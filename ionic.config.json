@@ -1,0 +1,7 @@
+{
+  "name": "manwithavan-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

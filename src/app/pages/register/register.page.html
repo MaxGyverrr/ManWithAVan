@@ -1,34 +1,37 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="orange">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
     <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-card>
     <ion-card-header>
       <ion-card-title>Please, enter your details!</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-input label="First Name" labelPlacement="floating" type="text"></ion-input>
+        <ion-input label="First Name" labelPlacement="floating" type="text" value="Maxwell William"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Last Name" labelPlacement="floating" type="text"></ion-input>
+        <ion-input label="Last Name" labelPlacement="floating" type="text" value="Ferreira"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Email" labelPlacement="floating" type="email"></ion-input>
+        <ion-input label="Email" labelPlacement="floating" type="email" value="2022212@student.cct.ie"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Password" labelPlacement="floating" type="password"></ion-input>
+        <ion-input label="Password" labelPlacement="floating" type="password" value="2022212"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Confirm Password" labelPlacement="floating" type="password"></ion-input>
+        <ion-input label="Confirm Password" labelPlacement="floating" type="password" value="2022212"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Phone Number" labelPlacement="floating" type="tel"></ion-input>
+        <ion-input label="Phone Number" labelPlacement="floating" type="tel" value="0832221111"></ion-input>
       </ion-item>
     </ion-card-content>
   </ion-card>
-  <ion-button size="full" color="light">Register</ion-button>
+  <ion-button size="full" color="light" (click)="register()">Register</ion-button>
 </ion-content>
